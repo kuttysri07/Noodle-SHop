@@ -1,0 +1,159 @@
+.container{
+    height: 60vh;
+    position: relative;
+   
+}
+.contents{
+    display: flex;
+    position: absolute;
+    top: 14%;
+    left: 16%;
+    z-index: 1;
+   
+}
+
+.left{
+   flex-basis: 40%;
+}
+
+.back{
+    position: absolute;
+    background:linear-gradient(rgb(22, 21, 21), rgb(69, 67, 67));
+    height: 410px;
+    width: 300px;
+    left: 18%;
+    z-index: 0;
+}
+
+.food{
+    width: 350px; 
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    justify-content: center;
+    text-align: left;
+}
+
+.right h1{
+    font-size: 3.5rem;
+}
+
+.right p{
+    font-size: 1rem;
+    padding: 0px 100px 0px 0px;
+    text-align: justify;
+}
+
+.item{
+    display: flex;
+    gap: 20%;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.item h2{
+    color: red;
+    cursor: pointer;
+}
+
+.item  .btn{
+    background-color: black;
+    height: 20px;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    transition: all .5s ease-out;
+}
+
+.item  .btn:hover{
+    background-color: red;
+}
+
+@media screen and (max-width:480px){
+    .container{
+        height: 90vh;
+    }
+    .contents{
+        flex-direction: column;
+        gap: 20px;
+        left: 11%;
+    }
+
+    .back{
+        height: 350px;
+        width: 250px;
+        left: 18%;
+        z-index: 0;
+    }
+
+    .food{
+        width: 300px; 
+    }
+
+    .left ,.right {
+        flex-basis: 100%;
+    }
+
+    .right h1{
+        font-size: 2rem;
+    }
+
+    .right p{
+        padding: 0px 50px 0px 0px;
+    }
+
+}
+
+@media(min-width:481px) and (max-width:768px){
+    .container{
+        height: 55vh;
+       
+    }
+    .contents{ 
+        top: 10%;
+        left: 7%;
+        gap: 20px;
+    }
+    .back{
+        left: 10%;
+    }
+    .right h1{
+        font-size: 2rem;
+    }
+
+    .right p{
+        padding: 0px 10px 0px 0px;
+      
+    }
+    
+    
+}
+
+@media(min-width:769px) and (max-width:1279px){
+    .container{
+        height: 70vh;
+    }
+
+    .contents{ 
+        left: 10%;
+        gap: 20px;
+    }
+
+    .back{
+        left: 13%;
+    }
+
+    .right h1{
+        font-size: 2rem;
+    }
+
+    .right p{
+        padding: 0px 10px 0px 0px;
+    }
+    
+}
